@@ -1,0 +1,897 @@
+﻿<!DOCTYPE html>
+<html>
+  <head>
+    <title>消息通知</title>
+    <meta http-equiv="X-UA-Compatible" content="IE=edge"/>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8"/>
+    <meta name="apple-mobile-web-app-capable" content="yes"/>
+    <link href="resources/css/jquery-ui-themes.css" type="text/css" rel="stylesheet"/>
+    <link href="resources/css/axure_rp_page.css" type="text/css" rel="stylesheet"/>
+    <link href="data/styles.css" type="text/css" rel="stylesheet"/>
+    <link href="files/消息通知/styles.css" type="text/css" rel="stylesheet"/>
+    <script src="resources/scripts/jquery-1.7.1.min.js"></script>
+    <script src="resources/scripts/jquery-ui-1.8.10.custom.min.js"></script>
+    <script src="resources/scripts/prototypePre.js"></script>
+    <script src="data/document.js"></script>
+    <script src="resources/scripts/prototypePost.js"></script>
+    <script src="files/消息通知/data.js"></script>
+    <script type="text/javascript">
+      $axure.utils.getTransparentGifPath = function() { return 'resources/images/transparent.gif'; };
+      $axure.utils.getOtherPath = function() { return 'resources/Other.html'; };
+      $axure.utils.getReloadPath = function() { return 'resources/reload.html'; };
+    </script>
+  </head>
+  <body>
+    <div id="base" class="">
+
+      <!-- Unnamed (矩形) -->
+      <div id="u927" class="ax_default label">
+        <div id="u927_div" class=""></div>
+        <div id="u927_text" class="text ">
+          <p><span>消息通知</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u928" class="ax_default _文本段落">
+        <div id="u928_div" class=""></div>
+        <div id="u928_text" class="text ">
+          <p><span>关注用户的动态通知</span></p><p><span>&#149; 触发时机：当关注的用户有新动态时，即时通知当前用户</span></p><p><span>&#149; 通知形式：仅以系统通知展示，此通知不在“消息”界面中呈现，点击系统通知直接进入对应文章页面</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u929" class="ax_default _文本段落">
+        <div id="u929_div" class=""></div>
+        <div id="u929_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:650;">消息已读状态</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、未读状态</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 用户收到消息后，查阅前，默认为未读消息</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 消息入口汇总显示未读消息数量</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、已读状态</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 用户收到消息后，点击查阅后，即视为已读消息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u930" class="ax_default _文本段落">
+        <div id="u930_div" class=""></div>
+        <div id="u930_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:650;">消息列表显示说明</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">1、消息显示排序</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 按消息发出时间倒序排列</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">2、被他人关注</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 关注的用户</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 关注的时间</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">3、文章被部落收录</span></p><p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';font-weight:400;">&#149; 相关的用户+行为+文章标题+时间</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u931" class="ax_default _文本段落">
+        <div id="u931_div" class=""></div>
+        <div id="u931_text" class="text ">
+          <p><span>个人相关的消息通知</span></p><p><span>&#149; 触发时机：用户被他人关注或用户发布内容被其他用户回应时通知当前用户。</span></p><p><span>&#149; 通知形式：仅APP内提示用户，消息入口显示新消息提醒，进入消息界面查看所有消息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (表格) -->
+      <div id="u932" class="ax_default">
+
+        <!-- Unnamed (单元格) -->
+        <div id="u933" class="ax_default table_cell">
+          <img id="u933_img" class="img " src="images/消息通知/u933.png"/>
+          <div id="u933_text" class="text ">
+            <p><span>与用户相关的事件</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u934" class="ax_default table_cell">
+          <img id="u934_img" class="img " src="images/消息通知/u934.png"/>
+          <div id="u934_text" class="text ">
+            <p><span>相关消息的点击跳转</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u935" class="ax_default table_cell">
+          <img id="u935_img" class="img " src="images/消息通知/u935.png"/>
+          <div id="u935_text" class="text ">
+            <p><span>被他人关注</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u936" class="ax_default table_cell">
+          <img id="u936_img" class="img " src="images/消息通知/u936.png"/>
+          <div id="u936_text" class="text ">
+            <p><span>跳转至对应个人主页</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u937" class="ax_default table_cell">
+          <img id="u937_img" class="img " src="images/消息通知/u935.png"/>
+          <div id="u937_text" class="text ">
+            <p><span>文章被他人评论</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u938" class="ax_default table_cell">
+          <img id="u938_img" class="img " src="images/消息通知/u936.png"/>
+          <div id="u938_text" class="text ">
+            <p><span>跳转至对应文章页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u939" class="ax_default table_cell">
+          <img id="u939_img" class="img " src="images/消息通知/u935.png"/>
+          <div id="u939_text" class="text ">
+            <p><span>文章被他人打赏</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u940" class="ax_default table_cell">
+          <img id="u940_img" class="img " src="images/消息通知/u936.png"/>
+          <div id="u940_text" class="text ">
+            <p><span>跳转至对应文章页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u941" class="ax_default table_cell">
+          <img id="u941_img" class="img " src="images/消息通知/u935.png"/>
+          <div id="u941_text" class="text ">
+            <p><span>文章被他人点赞</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u942" class="ax_default table_cell">
+          <img id="u942_img" class="img " src="images/消息通知/u936.png"/>
+          <div id="u942_text" class="text ">
+            <p><span>跳转至对应文章页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u943" class="ax_default table_cell">
+          <img id="u943_img" class="img " src="images/消息通知/u935.png"/>
+          <div id="u943_text" class="text ">
+            <p><span>文章被他人收藏</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u944" class="ax_default table_cell">
+          <img id="u944_img" class="img " src="images/消息通知/u936.png"/>
+          <div id="u944_text" class="text ">
+            <p><span>跳转至对应文章页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u945" class="ax_default table_cell">
+          <img id="u945_img" class="img " src="images/消息通知/u945.png"/>
+          <div id="u945_text" class="text ">
+            <p><span>文章被部落收录</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u946" class="ax_default table_cell">
+          <img id="u946_img" class="img " src="images/消息通知/u946.png"/>
+          <div id="u946_text" class="text ">
+            <p><span>跳转至对应文章页面</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u947" class="ax_default _文本段落">
+        <div id="u947_div" class=""></div>
+        <div id="u947_text" class="text ">
+          <p><span>系统通知的显示内容</span></p><p><span>&#149; APP的logo</span></p><p><span>&#149; 通知标题：关注用户+动态（例：LiHang 发布了新文章）</span></p><p><span>&#149; 副标题：文章标题/提问标题/部落名称</span></p><p><span>&#149; 通知时间</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (表格) -->
+      <div id="u948" class="ax_default">
+
+        <!-- Unnamed (单元格) -->
+        <div id="u949" class="ax_default table_cell">
+          <img id="u949_img" class="img " src="images/消息通知/u933.png"/>
+          <div id="u949_text" class="text ">
+            <p><span>关注用户的动态</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u950" class="ax_default table_cell">
+          <img id="u950_img" class="img " src="images/消息通知/u934.png"/>
+          <div id="u950_text" class="text ">
+            <p><span>触发通知的点击跳转</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u951" class="ax_default table_cell">
+          <img id="u951_img" class="img " src="images/消息通知/u935.png"/>
+          <div id="u951_text" class="text ">
+            <p><span>发布新文章</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u952" class="ax_default table_cell">
+          <img id="u952_img" class="img " src="images/消息通知/u936.png"/>
+          <div id="u952_text" class="text ">
+            <p><span>跳转至对应文章页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u953" class="ax_default table_cell">
+          <img id="u953_img" class="img " src="images/消息通知/u935.png"/>
+          <div id="u953_text" class="text ">
+            <p><span>评论了文章</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u954" class="ax_default table_cell">
+          <img id="u954_img" class="img " src="images/消息通知/u936.png"/>
+          <div id="u954_text" class="text ">
+            <p><span>跳转至对应文章页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u955" class="ax_default table_cell">
+          <img id="u955_img" class="img " src="images/消息通知/u935.png"/>
+          <div id="u955_text" class="text ">
+            <p><span>点赞了文章</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u956" class="ax_default table_cell">
+          <img id="u956_img" class="img " src="images/消息通知/u936.png"/>
+          <div id="u956_text" class="text ">
+            <p><span>跳转至对应文章页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u957" class="ax_default table_cell">
+          <img id="u957_img" class="img " src="images/消息通知/u935.png"/>
+          <div id="u957_text" class="text ">
+            <p><span>打赏了文章</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u958" class="ax_default table_cell">
+          <img id="u958_img" class="img " src="images/消息通知/u936.png"/>
+          <div id="u958_text" class="text ">
+            <p><span>跳转至对应文章页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u959" class="ax_default table_cell">
+          <img id="u959_img" class="img " src="images/消息通知/u935.png"/>
+          <div id="u959_text" class="text ">
+            <p><span>收藏了文章</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u960" class="ax_default table_cell">
+          <img id="u960_img" class="img " src="images/消息通知/u936.png"/>
+          <div id="u960_text" class="text ">
+            <p><span>跳转至对应文章页面</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u961" class="ax_default table_cell">
+          <img id="u961_img" class="img " src="images/消息通知/u945.png"/>
+          <div id="u961_text" class="text ">
+            <p><span>新加入部落</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (单元格) -->
+        <div id="u962" class="ax_default table_cell">
+          <img id="u962_img" class="img " src="images/消息通知/u946.png"/>
+          <div id="u962_text" class="text ">
+            <p><span>跳转至对应部落首页</span></p>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u963" class="ax_default box_1">
+        <div id="u963_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u964" class="ax_default _图片">
+        <img id="u964_img" class="img " src="images/线框图/u193.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u965" class="ax_default _文本段落">
+        <div id="u965_div" class=""></div>
+        <div id="u965_text" class="text ">
+          <p><span>Nickname</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u966" class="ax_default _文本段落">
+        <div id="u966_div" class=""></div>
+        <div id="u966_text" class="text ">
+          <p><span>ID:1341434</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u967" class="ax_default _文本段落">
+        <div id="u967_div" class=""></div>
+        <div id="u967_text" class="text ">
+          <p><span>这是一个不太长的签名</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u968" class="ax_default _图片">
+        <img id="u968_img" class="img " src="images/线框图/u197.png"/>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u969" class="ax_default" data-left="643" data-top="671" data-width="42" data-height="16">
+
+        <!-- Unnamed (组合) -->
+        <div id="u970" class="ax_default" data-left="643" data-top="671" data-width="42" data-height="16">
+
+          <!-- Unnamed (矩形) -->
+          <div id="u971" class="ax_default box_1">
+            <div id="u971_div" class=""></div>
+            <div id="u971_text" class="text ">
+              <p><span>4</span></p>
+            </div>
+          </div>
+
+          <!-- Unnamed (图片) -->
+          <div id="u972" class="ax_default _图片">
+            <img id="u972_img" class="img " src="images/线框图/u201.png"/>
+          </div>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u973" class="ax_default _文本段落">
+        <div id="u973_div" class=""></div>
+        <div id="u973_text" class="text ">
+          <p><span>&nbsp; 18</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u974" class="ax_default" data-left="694" data-top="671" data-width="42" data-height="16">
+
+        <!-- Unnamed (矩形) -->
+        <div id="u975" class="ax_default box_1">
+          <div id="u975_div" class=""></div>
+          <div id="u975_text" class="text ">
+            <p><span>4</span></p>
+          </div>
+        </div>
+
+        <!-- Unnamed (图片) -->
+        <div id="u976" class="ax_default _图片">
+          <img id="u976_img" class="img " src="images/线框图/u205.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u977" class="ax_default _文本段落">
+        <div id="u977_div" class=""></div>
+        <div id="u977_text" class="text ">
+          <p style="font-size:12px;"><span style="font-size:28px;">213</span><span>关注</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u978" class="ax_default _文本段落">
+        <div id="u978_div" class=""></div>
+        <div id="u978_text" class="text ">
+          <p style="font-size:12px;"><span style="font-size:28px;">10</span><span>粉丝</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u979" class="ax_default _图片">
+        <img id="u979_img" class="img " src="images/线框图/u38.png"/>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u980" class="ax_default _图片">
+        <img id="u980_img" class="img " src="images/线框图/u39.png"/>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u981" class="ax_default _图片">
+        <img id="u981_img" class="img " src="images/线框图/u40.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u982" class="ax_default _文本段落">
+        <div id="u982_div" class=""></div>
+        <div id="u982_text" class="text ">
+          <p><span>09:12</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u983" class="ax_default box_2">
+        <img id="u983_img" class="img " src="images/线框图/u213.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u984" class="ax_default box_2">
+        <div id="u984_div" class=""></div>
+        <div id="u984_text" class="text ">
+          <p><span>&nbsp;&nbsp; &nbsp; 签到</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (SVG) -->
+      <div id="u985" class="ax_default _图片">
+        <img id="u985_img" class="img " src="images/线框图/u215.svg"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u986" class="ax_default _文本段落">
+        <div id="u986_div" class=""></div>
+        <div id="u986_text" class="text ">
+          <p style="font-size:12px;"><span style="font-family:'DINCondensed-Bold', 'DIN Condensed Bold', 'DIN Condensed';font-weight:700;font-size:28px;">119</span><span style="font-family:'PingFangSC-Semibold', 'PingFang SC Semibold', 'PingFang SC';font-weight:650;">收藏</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u987" class="ax_default label">
+        <div id="u987_div" class=""></div>
+        <div id="u987_text" class="text ">
+          <p><span>动态</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u988" class="ax_default line">
+        <img id="u988_img" class="img " src="images/线框图/u118.png"/>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u989" class="ax_default line">
+        <img id="u989_img" class="img " src="images/用户个人主页/u665.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u990" class="ax_default label">
+        <div id="u990_div" class=""></div>
+        <div id="u990_text" class="text ">
+          <p><span>资产</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u991" class="ax_default _文本段落">
+        <div id="u991_div" class=""></div>
+        <div id="u991_text" class="text ">
+          <p><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#AEAEAE;">五年前的初代《腐烂国度》并没有革命性的创新，各方面机制也远远没有打磨得足够完善，但是依然通过一系列微创新精确地触到了一部分核心生存游戏爱好者的痛点。</span><span style="font-family:'ArialMT', 'Arial';color:#AEAEAE;">2013</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#AEAEAE;">年的丧尸题材游戏市场已经是一片红海...</span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';">&nbsp; </span><span style="font-family:'PingFangSC-Regular', 'PingFang SC';color:#4F94D2;">查看全文</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u992" class="ax_default _图片">
+        <img id="u992_img" class="img " src="images/线框图/u29.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u993" class="ax_default _文本段落">
+        <div id="u993_div" class=""></div>
+        <div id="u993_text" class="text ">
+          <p><span style="color:#4F94D2;">不倒翁蜀黍 </span><span style="color:#AEAEAE;">发表了评测</span></p><p><span style="color:#AEAEAE;">发布于 </span><span style="color:#4F94D2;">《腐烂国度》部落</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u994" class="ax_default _文本段落">
+        <div id="u994_div" class=""></div>
+        <div id="u994_text" class="text ">
+          <p><span>10分钟前</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u995" class="ax_default _图片">
+        <img id="u995_img" class="img " src="images/线框图/u139.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u996" class="ax_default box_2">
+        <img id="u996_img" class="img " src="images/线框图/u140.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u997" class="ax_default _文本段落">
+        <div id="u997_div" class=""></div>
+        <div id="u997_text" class="text ">
+          <p><span>《腐烂国度2》临时评测7.5分 作为半价游戏，它挺靠谱</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (形状) -->
+      <div id="u998" class="ax_default box_2">
+        <img id="u998_img" class="img " src="images/线框图/u242.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u999" class="ax_default label">
+        <div id="u999_div" class=""></div>
+        <div id="u999_text" class="text ">
+          <p><span>更多</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1000" class="ax_default box_2">
+        <div id="u1000_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (水平线) -->
+      <div id="u1001" class="ax_default line">
+        <img id="u1001_img" class="img " src="images/线框图/u118.png"/>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u1002" class="ax_default" data-left="913" data-top="1230" data-width="22" data-height="24">
+
+        <!-- Unnamed (形状) -->
+        <div id="u1003" class="ax_default box_2">
+          <img id="u1003_img" class="img " src="images/用户个人主页/u824.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u1004" class="ax_default box_2">
+          <img id="u1004_img" class="img " src="images/用户个人主页/u825.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u1005" class="ax_default" data-left="671" data-top="1233" data-width="34" data-height="24">
+
+        <!-- Unnamed (形状) -->
+        <div id="u1006" class="ax_default box_2">
+          <img id="u1006_img" class="img " src="images/用户个人主页/u827.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u1007" class="ax_default box_2">
+          <img id="u1007_img" class="img " src="images/用户个人主页/u828.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u1008" class="ax_default box_2">
+          <img id="u1008_img" class="img " src="images/用户个人主页/u829.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u1009" class="ax_default box_2">
+          <img id="u1009_img" class="img " src="images/用户个人主页/u830.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u1010" class="ax_default box_2">
+          <img id="u1010_img" class="img " src="images/用户个人主页/u831.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u1011" class="ax_default" data-left="796" data-top="1229" data-width="25" data-height="24">
+
+        <!-- Unnamed (形状) -->
+        <div id="u1012" class="ax_default box_2">
+          <img id="u1012_img" class="img " src="images/用户个人主页/u833.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u1013" class="ax_default box_2">
+          <img id="u1013_img" class="img " src="images/用户个人主页/u834.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u1014" class="ax_default box_2">
+          <img id="u1014_img" class="img " src="images/用户个人主页/u835.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (组合) -->
+      <div id="u1015" class="ax_default" data-left="900" data-top="478" data-width="16" data-height="18">
+
+        <!-- Unnamed (形状) -->
+        <div id="u1016" class="ax_default box_2">
+          <img id="u1016_img" class="img " src="images/用户个人主页/u817.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u1017" class="ax_default box_2">
+          <img id="u1017_img" class="img " src="images/用户个人主页/u818.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u1018" class="ax_default box_2">
+          <img id="u1018_img" class="img " src="images/用户个人主页/u819.png"/>
+        </div>
+
+        <!-- Unnamed (形状) -->
+        <div id="u1019" class="ax_default box_2">
+          <img id="u1019_img" class="img " src="images/用户个人主页/u820.png"/>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1020" class="ax_default _文本段落">
+        <div id="u1020_div" class=""></div>
+        <div id="u1020_text" class="text ">
+          <p><span>4</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1021" class="ax_default box_1">
+        <div id="u1021_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1022" class="ax_default box_2">
+        <div id="u1022_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1023" class="ax_default box_2">
+        <div id="u1023_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1024" class="ax_default _图片">
+        <img id="u1024_img" class="img " src="images/线框图/u29.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1025" class="ax_default _文本段落">
+        <div id="u1025_div" class=""></div>
+        <div id="u1025_text" class="text ">
+          <p><span style="color:#1E1E1E;">不倒翁蜀黍</span><span style="color:#4F94D2;"> </span><span style="color:#AEAEAE;">关注了你</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1026" class="ax_default _文本段落">
+        <div id="u1026_div" class=""></div>
+        <div id="u1026_text" class="text ">
+          <p><span>10分钟前</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1027" class="ax_default box_2">
+        <div id="u1027_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1028" class="ax_default _图片">
+        <img id="u1028_img" class="img " src="images/线框图/u29.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1029" class="ax_default _文本段落">
+        <div id="u1029_div" class=""></div>
+        <div id="u1029_text" class="text ">
+          <p style="line-height:normal;"><span style="color:#1E1E1E;">不倒翁蜀黍</span><span style="color:#4F94D2;"> </span><span style="color:#AEAEAE;">评论了你的文章 </span><span style="color:#4F94D2;">《腐烂国度2》联赛评测7.5分，作为半价游戏，挺靠谱</span></p><p style="line-height:28px;"><span style="color:#1E1E1E;">这个游戏很赞，从腐1就开始玩了</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1030" class="ax_default _文本段落">
+        <div id="u1030_div" class=""></div>
+        <div id="u1030_text" class="text ">
+          <p><span>10分钟前</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1031" class="ax_default box_2">
+        <div id="u1031_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1032" class="ax_default _图片">
+        <img id="u1032_img" class="img " src="images/线框图/u29.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1033" class="ax_default _文本段落">
+        <div id="u1033_div" class=""></div>
+        <div id="u1033_text" class="text ">
+          <p><span style="color:#1E1E1E;">不倒翁蜀黍</span><span style="color:#4F94D2;"> </span><span style="color:#AEAEAE;">打赏了你的文章 </span><span style="color:#4F94D2;">《腐烂国度2》联赛评测7.5分，作为半价游戏，挺靠谱</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1034" class="ax_default _文本段落">
+        <div id="u1034_div" class=""></div>
+        <div id="u1034_text" class="text ">
+          <p><span>10分钟前</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1035" class="ax_default box_2">
+        <div id="u1035_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1036" class="ax_default _图片">
+        <img id="u1036_img" class="img " src="images/线框图/u29.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1037" class="ax_default _文本段落">
+        <div id="u1037_div" class=""></div>
+        <div id="u1037_text" class="text ">
+          <p><span style="color:#1E1E1E;">不倒翁蜀黍</span><span style="color:#4F94D2;"> </span><span style="color:#AEAEAE;">点赞了你的文章 </span><span style="color:#4F94D2;">《腐烂国度2》联赛评测7.5分，作为半价游戏，挺靠谱</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1038" class="ax_default _文本段落">
+        <div id="u1038_div" class=""></div>
+        <div id="u1038_text" class="text ">
+          <p><span>10分钟前</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1039" class="ax_default box_2">
+        <div id="u1039_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1040" class="ax_default _图片">
+        <img id="u1040_img" class="img " src="images/线框图/u29.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1041" class="ax_default _文本段落">
+        <div id="u1041_div" class=""></div>
+        <div id="u1041_text" class="text ">
+          <p><span style="color:#1E1E1E;">不倒翁蜀黍</span><span style="color:#4F94D2;"> </span><span style="color:#AEAEAE;">点赞了你的文章 </span><span style="color:#4F94D2;">《腐烂国度2》联赛评测7.5分，作为半价游戏，挺靠谱</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1042" class="ax_default _文本段落">
+        <div id="u1042_div" class=""></div>
+        <div id="u1042_text" class="text ">
+          <p><span>10分钟前</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1043" class="ax_default box_2">
+        <div id="u1043_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1044" class="ax_default _图片">
+        <img id="u1044_img" class="img " src="images/线框图/u29.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1045" class="ax_default _文本段落">
+        <div id="u1045_div" class=""></div>
+        <div id="u1045_text" class="text ">
+          <p><span style="color:#1E1E1E;">不倒翁蜀黍</span><span style="color:#4F94D2;"> </span><span style="color:#AEAEAE;">收藏了你的文章 </span><span style="color:#4F94D2;">《腐烂国度2》联赛评测7.5分，作为半价游戏，挺靠谱</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1046" class="ax_default _文本段落">
+        <div id="u1046_div" class=""></div>
+        <div id="u1046_text" class="text ">
+          <p><span>10分钟前</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1047" class="ax_default box_2">
+        <div id="u1047_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1048" class="ax_default _文本段落">
+        <div id="u1048_div" class=""></div>
+        <div id="u1048_text" class="text ">
+          <p><span style="color:#1E1E1E;">独爱单机</span><span style="color:#4F94D2;">&nbsp; &nbsp; &nbsp; &nbsp; &nbsp; </span><span style="color:#AEAEAE;">收录了你的文章 </span><span style="color:#4F94D2;">《腐烂国度2》联赛评测7.5分，作为半价游戏，挺靠谱</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1049" class="ax_default _文本段落">
+        <div id="u1049_div" class=""></div>
+        <div id="u1049_text" class="text ">
+          <p><span>10分钟前</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1050" class="ax_default _图片">
+        <img id="u1050_img" class="img " src="images/消息通知/u1050.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1051" class="ax_default _文本段落">
+        <div id="u1051_div" class=""></div>
+        <div id="u1051_text" class="text ">
+          <p><span>部落</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1052" class="ax_default box_2">
+        <div id="u1052_div" class=""></div>
+      </div>
+
+      <!-- Unnamed (SVG) -->
+      <div id="u1053" class="ax_default _图片">
+        <img id="u1053_img" class="img " src="images/线框图/u168.svg"/>
+      </div>
+
+      <!-- Unnamed (SVG) -->
+      <div id="u1054" class="ax_default _图片">
+        <img id="u1054_img" class="img " src="images/线框图/u169.svg"/>
+      </div>
+
+      <!-- Unnamed (SVG) -->
+      <div id="u1055" class="ax_default _图片">
+        <img id="u1055_img" class="img " src="images/线框图/u170.svg"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1056" class="ax_default _文本段落">
+        <div id="u1056_div" class=""></div>
+        <div id="u1056_text" class="text ">
+          <p><span>09:12</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (图片) -->
+      <div id="u1057" class="ax_default _图片">
+        <img id="u1057_img" class="img " src="images/线框图/u164.png"/>
+      </div>
+
+      <!-- Unnamed (矩形) -->
+      <div id="u1058" class="ax_default _文本段落">
+        <div id="u1058_div" class=""></div>
+        <div id="u1058_text" class="text ">
+          <p><span>消息</span></p>
+        </div>
+      </div>
+
+      <!-- Unnamed (热区) -->
+      <div id="u1059" class="ax_default">
+      </div>
+
+      <!-- Unnamed (热区) -->
+      <div id="u1060" class="ax_default">
+      </div>
+    </div>
+  </body>
+</html>

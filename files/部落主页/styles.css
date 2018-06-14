@@ -3,7 +3,7 @@
   background-image:none;
   position:static;
   left:auto;
-  width:973px;
+  width:1073px;
   margin-left:0;
   margin-right:0;
   text-align:left;
@@ -503,4 +503,24 @@
   top:0px;
   width:412px;
   white-space:nowrap;
+}
+#u1316 {
+  border-width:0px;
+  position:absolute;
+  left:0px;
+  top:2580px;
+  width:100px;
+  height:100px;
+  overflow:hidden;
+  background-image:url('../../resources/images/transparent.gif');
+}
+#u1317 {
+  border-width:0px;
+  position:absolute;
+  left:973px;
+  top:2589px;
+  width:100px;
+  height:100px;
+  overflow:hidden;
+  background-image:url('../../resources/images/transparent.gif');
 }

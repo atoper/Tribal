@@ -213,6 +213,9 @@
   top:22px;
   width:160px;
   height:22px;
+  font-family:'PingFangSC-Regular', 'PingFang SC';
+  font-weight:400;
+  font-style:normal;
   text-align:left;
 }
 #u947_text {

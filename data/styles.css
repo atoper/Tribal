@@ -104,6 +104,8 @@
 }
 .box_2 {
 }
+.box_3 {
+}
 .flow_shape {
 }
 .paragraph {
@@ -134,4 +136,11 @@
 .horizontal_line {
 }
 .vertical_line {
+}
+.shape1 {
+}
+.line1 {
+  font-family:'MicrosoftYaHei', 'Microsoft YaHei';
+  font-weight:400;
+  font-style:normal;
 }

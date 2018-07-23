@@ -99,6 +99,9 @@
   color:#000000;
   text-align:left;
 }
+.checkbox {
+  text-align:left;
+}
 .radio_button {
   text-align:left;
 }
@@ -149,4 +152,6 @@
   font-style:normal;
 }
 ._水平线 {
+}
+._表格 {
 }
